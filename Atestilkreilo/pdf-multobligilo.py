@@ -11,7 +11,7 @@ FONT_PATH = "AlexBrush-Regular.ttf"
 pdfmetrics.registerFont(TTFont("AlexBrush", FONT_PATH))
 
 # Dosieroj
-BASE_CERTIFICATE = "sablono_instruistoj.pdf"
+BASE_CERTIFICATE = "sxablono_instruistoj.pdf"
 STUDENT_LIST = "instruistoj.txt"
 OUTPUT_DIR = "Atestiloj"
 
@@ -33,7 +33,7 @@ def generate_certificate(student_name, output_path):
     can = canvas.Canvas(packet, pagesize=letter)
 
     # Agordi la tiparon kaj grandecon
-    font_size = 50
+    font_size = 48
     can.setFont("AlexBrush", font_size)
 
     # Akiri la larĝon de la paĝo
